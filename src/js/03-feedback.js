@@ -26,21 +26,21 @@ form.addEventListener('input', throttle(onTextareaInput, 500));
 
 // ^Add functions
 
-function onTextareaInput(evt) {
-  formData[evt.target.name] = evt.target.value;
+function onTextareaInput(e) {
+  formData[e.target.name] = e.target.value;
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
-function onFormSubmit(evt) {
-  evt.preventDefault();
+function onFormSubmit(e) {
+  e.preventDefault();
 
   if (email.value === '' || message.value === '') {
     return alert('Всі поля повинні бути заповнені.');
   }
 
   console.log(formData);
-  evt.target.reset();
+  e.target.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
 
