@@ -6,6 +6,7 @@
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  background: rgb(208, 206, 206);
 }
 
 .feedback-form label {
@@ -15,9 +16,12 @@
 }
 
 .feedback-form button {
+  background: green;
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
+  border-radius: 15px;
+  border: yellow solid 1px;
 }
 
 input,

@@ -1,4 +1,4 @@
-//^ Add imports above this line
+//^ Add imports 
 
 import SimpleLightbox from 'simplelightbox';
 //? Додатковий імпорт стилів
