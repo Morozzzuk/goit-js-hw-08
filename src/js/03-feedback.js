@@ -11,10 +11,7 @@ const message = document.querySelector('.feedback-form textarea');
 const STORAGE_KEY = 'feedback-form-state';
 const savedData = localStorage.getItem(STORAGE_KEY);
 const parseData = JSON.parse(savedData);
-let formData = {
-    email: '',
-    message: '',
-};
+let formData = {};
 fillTextarea();
 
 // ^ Add Listeners
